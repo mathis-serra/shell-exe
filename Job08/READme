@@ -1,0 +1,2 @@
+crontab -e
+*/30 * * * * grep -P "systemd-logind.*root" var/log/auth.log | wc -l 
